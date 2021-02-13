@@ -32,7 +32,7 @@ class LinkedList(object):
         else:
             previous_node.next = node.next;
 
-    def size(self):
+    def size1(self):
         return self.size
 
     def size2(self):
@@ -63,6 +63,19 @@ l.insertstart(13)
 l.insertstart(1)
 l.insertend(19)
 l.traverse()
+
 l.remove(13)
 print('\n')
+l.traverse()
+
+print('\n')
+l.size2()
+
+l.remove(1)
+l.traverse()
+
+print('\n')
+l.insertend(12)
+l.insertend(13)
+l.remove(12)
 l.traverse()
